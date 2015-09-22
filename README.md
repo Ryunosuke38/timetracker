@@ -6,6 +6,7 @@ Uses [rails](https://github.com/rails/rails) as webframework, [rom](http://rom-r
 
 ```
   $ bundle install
+  $ export DATABASE_URL="postgres://username:password@localhost/database
   $ rails s
 ```
 
