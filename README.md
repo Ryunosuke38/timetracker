@@ -6,7 +6,6 @@ Uses [rails](https://github.com/rails/rails) as webframework, [rom](http://rom-r
 
 ```
   $ bundle install
-  $ npm install
   $ rails s
 ```
 
