@@ -14,6 +14,13 @@
 - has one Category
 - has many TimeEntries
 
+# Membership
+
+- user_id
+- project_id
+
+A user can have many projects but also a projects belongs to multiple users.
+
 # Category
 
 - name [String]
