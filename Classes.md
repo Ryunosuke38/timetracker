@@ -4,26 +4,33 @@
 - lastname [String]
 - email [String]
 - password [String]
-- has many Projects [Array[Project]]
+- has many Projects
 
 # Project
 
 - name [String]
 - description [Text]
-- belongs to User [User]
-- has one Category [Category]
-- has many TimeEntries [Array[TimeEntry]]
+- belongs to many Users
+- has one Category
+- has many TimeEntries
+
+# Membership
+
+- user_id
+- project_id
+
+A user can have many projects but also a projects belongs to multiple users.
 
 # Category
 
 - name [String]
 - description [Text]
-- belongs to Project [Project]
+- belongs to Project
 
 # TimeEntry
 
 - Start date [Date]
 - End date [Date]
 - Duration in minutes(Calculated by start and end date) [Integer]
-- belongs to Project [Project]
+- belongs to Project
 
