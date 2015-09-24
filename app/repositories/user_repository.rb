@@ -13,8 +13,9 @@ class UserRepository < ROM::Repository::Base
     with_id(id).combine_children(many: memberships)
   end
 
-  def with_projects(id)
-    # need to define with_users in project relation
-    with_id(id).combine_children(many: projects.with_users)
+  def projects_for_user(id)
+    with_memberships(id).first.memberships.map do |m|
+      ProjectRepository.new(ROM.env)[m.project_id]
+    end
   end
 end
