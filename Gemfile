@@ -10,7 +10,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'rack-mini-profiler', :require => false
 gem 'flamegraph'
-gem 'stackprof'
+gem 'stackprof', platforms: :mri
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -39,7 +39,7 @@ gem 'rom-repository'
 
 group :development, :test do
   gem 'pry-rails'
-  gem 'pry-byebug'
+  gem 'pry-byebug', platforms: :mri
   gem 'rspec-rails', '~> 3.0'
 end
 
