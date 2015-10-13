@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   get "/components/:name" => "components#load", constraints: { name: /.+/ }
 
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
