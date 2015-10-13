@@ -24,6 +24,8 @@ gem 'haml-rails'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'sidekiq', '~> 3.5'
+
 gem 'rom-rails'
 gem 'rom-sql'
 gem 'rom-repository'
