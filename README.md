@@ -10,6 +10,17 @@ Uses [rails](https://github.com/rails/rails) as webframework, [rom](http://rom-r
   $ rails s
 ```
 
+# Getting started with Docker
+
+If you want to use docker as dev environment follow these steps:
+
+Install [docker](https://docs.docker.com/installation/) and [docker-compose](https://docs.docker.com/compose/)
+
+```
+  $ docker-compose build
+  $ docker-compose up
+```
+
 # License, Contribution & Copyright
 
 License: MIT
